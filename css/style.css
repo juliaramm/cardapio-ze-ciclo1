@@ -1,0 +1,754 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+.layout-max {
+    max-width: 1440px;
+    margin: 0 auto;  
+    width: 100%;     
+}
+
+/* HEADER PADRÃO */
+
+.minha-nav {
+    background-color: #4d0d0d;
+}
+
+.ico-button {
+    margin-left: 0;
+    color: white !important;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+
+.minha-ul {
+    display: flex;
+    align-items: center;
+    flex: 1; 
+    justify-content: center; 
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+/* Mobile */
+@media (max-width: 821px) {
+    .minha-ul {
+        gap: 0 !important;
+    }
+}
+
+/* Desktop */
+@media (min-width: 821px) {
+    .minha-ul {
+        gap: 15px !important;
+    }
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.nav-link:hover {
+    color: #ffdd55 !important;
+    font-size: 1.1em;
+    text-decoration: underline;
+}
+
+/* ___FIM DO HEADER__ */
+
+/* STYLE DO HOME */
+
+.container-home {
+    height: 500px; 
+    overflow: hidden;
+    padding: 0;
+}
+
+.img-home {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+    object-position: center;
+}
+
+
+/* ____AUTENTICIDADE________________-*/
+
+.autenticidade-section {
+  background: #d9c29c;
+  color: #5a4b34;
+  border-top: 1px solid #ffffff60;
+}
+
+.titulo-autenticidade {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.descricao-autenticidade {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+/* __________-botão_________ */
+
+.btn-cardapio-wrapper {
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  
+}
+
+.btn-cardapio {
+    background-color: #4d0d0d;
+}
+
+.btn-cardapio:hover {
+    background-color: #116600;
+}
+
+
+/* --- AVALIAÇÕES --- */
+
+.avaliacoes-section {
+  background: #116600;
+  border-top: 1px solid #ffffff60;
+}
+
+.titulo-avaliacoes {
+  color: #d9c29c;
+  font-weight: 600;
+}
+
+.avaliacao-box {
+  background: transparent;
+  border-left: 2px solid #d9c29c;
+}
+
+.stars {
+  color: #ffdf00;
+  font-size: 1.4rem;
+}
+
+.nome {
+  color: #d9c29c;
+  font-weight: 600;
+}
+
+.texto {
+  font-size: .95rem;
+  line-height: 1.4;
+}
+
+
+/* --- RESERVA --- */
+
+.reserva-section {
+  background: #d9c29c;
+  text-align: center;
+  border-top: 1px solid #ffffff60;
+}
+
+.titulo-reserva {
+  font-weight: 700;
+  color: #5a4b34;
+}
+
+.descricao-reserva {
+  color: #5a4b34;
+}
+
+.btn-reservar {
+  background-color: #4d0d0d;
+  padding: 12px 28px;
+  color: white;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.btn-reservar:hover {
+  opacity: 0.8;
+  background-color: #116600;
+  color: white;
+}
+
+/* _____________________RECOMENDAÇÃO DO CHEF____________________-- */
+span {
+    margin: 0 !important;
+}
+
+.rec-chef {
+    background-color: #116600;
+    padding: 20px 0px 0px 0px !important;
+    border-top: 1px solid #ffffff60;
+}
+
+.texto-chef {
+  text-align: center;     
+  font-weight: normal;     
+  color: white;           
+  line-height: 1.5;        
+  font-family: inherit;   
+  padding: 0 1rem;         
+}
+
+.texto-chef p {
+  margin: 0.5rem 0;       
+  font-weight: normal;     
+  color: inherit;          
+}
+
+
+.texto-chef p.fs-1 {
+  font-weight: 700;
+  font-size: 2.7em !important;
+  margin-bottom: 0 !important;
+}
+
+.texto-chef p.fs-4 {
+  font-weight: 600;
+  color: #f3e38d;
+  margin-top: 0 !important;
+}
+
+.texto-chef p.fw-semibold {
+  line-height: 1.5;
+  font-size: 1.1em;
+}
+
+.texto-chef .destaque {
+  color: #f3e38d;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+    .texto-chef {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+
+.img-chef-wrap {
+    display: flex;
+    justify-content: flex-end;   
+    align-items: flex-end;       
+    overflow: hidden;
+    min-height: 350px;           /* altura inicial da coluna */
+}
+
+.img-chef {
+    max-width: 100%;
+    height: auto;               
+    object-fit: contain;         /* não corta a imagem */
+    object-position: bottom right; /* pra sempre encostar no bottom-right */
+}
+
+@media (max-width: 1100px) {
+    .img-chef {
+        max-height: 300px;      /* pra diminuir um pouc0 */
+    }
+}
+
+/* STYLE DO CARDAPIO */
+
+span {
+    margin: 0 !important;
+}
+
+.rec-chef {
+    background-color: #116600;
+    padding: 20px 0px 0px 0px !important;
+    border-top: 1px solid #ffffff60;
+    border-bottom: 1px solid #ffffff60;
+}
+
+.texto-chef {
+  text-align: center;     
+  font-weight: normal;     
+  color: white;           
+  line-height: 1.5;        
+  font-family: inherit;   
+  padding: 0 1rem;         
+}
+
+.texto-chef p {
+  margin: 0.5rem 0;       
+  font-weight: normal;     
+  color: inherit;          
+}
+
+
+.texto-chef p.fs-1 {
+  font-weight: 700;
+  font-size: 2.7em !important;
+  margin-bottom: 0 !important;
+}
+
+.texto-chef p.fs-4 {
+  font-weight: 600;
+  color: #f3e38d;
+  margin-top: 0 !important;
+}
+
+.texto-chef p.fw-semibold {
+  line-height: 1.5;
+  font-size: 1.1em;
+}
+
+.texto-chef .destaque {
+  color: #f3e38d;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+    .texto-chef {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+
+.img-chef-wrap {
+    display: flex;
+    justify-content: flex-end;   
+    align-items: flex-end;       
+    overflow: hidden;
+    min-height: 350px;           /* altura inicial da coluna */
+}
+
+.img-chef {
+    max-width: 100%;
+    height: auto;               
+    object-fit: contain;         /* não corta a imagem */
+    object-position: bottom right; /* pra sempre encostar no bottom-right */
+}
+
+@media (max-width: 1100px) {
+    .img-chef {
+        max-height: 300px;      /* pra diminuir um pouc0 */
+    }
+}
+
+/* ___________Fundo vinho___________ */
+
+.title-principal1 {
+    width: 100%;
+    height: 80px;
+    background-color: #4d0d0d;
+    margin: 0;
+    padding: 0px !important;
+}
+.title-principal1-1 {
+    font-family: "Playfair Display", serif;
+    font-size: 2.9em;
+    color: #a5860b;
+    margin: 0;
+    padding-top: 25px !important;
+}
+
+.part-cardapio {
+    background-color: #4d0d0d;
+}
+
+/* ____________Título de seção___________ */
+.section-title {
+    font-weight: bold;
+    font-size: 1.8rem;
+    border-bottom: 1px solid #ffffff60;
+    padding-bottom: 8px;
+    margin-bottom: 25px;
+    color: white;
+}
+
+
+.menu-item {
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.menu-item p {
+    color: #ddd;
+}
+
+/* _________-Imagens do cardápio___________- */
+.menu-img {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+.preco {
+    float: right;
+    color: #ffdd55;
+}
+
+.h5-1 {
+    width: 100%;
+}
+
+span {
+    margin-left: 80px;
+}
+/* FIMM - STYLE DO CARDAPIO */
+
+/* STYLE EVENTOS&VISITAS */
+
+.navbar-cor {
+    background-color: rgb(80, 4, 4);
+}
+.logo-tamanho {
+    height: 120px;
+    width: 15.2rem;
+    object-fit: cover;
+}
+
+.nav-letra {
+    font-family: inter;
+}
+
+.icon-cor {
+    filter: invert(1);
+
+}
+
+.img-tamanho {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+}
+
+.row-bege {
+    background-color: rgb(217, 184, 138);
+    color: rgb(249, 240, 169);
+}
+
+.row-fundo {
+    background-color: rgb(253, 245, 221);
+}
+
+.row-marrom {
+    background-color: rgb(163, 105, 39);
+}
+
+.card.rounded-5 {
+    overflow: hidden;
+   
+}
+
+.cor-fundo {
+    background-color:  rgb(253, 245, 221);
+}
+
+/* FIM EVENTOS&VISITAS */
+
+/* STYLE - SOBRE NÓS */
+
+.sb-config{
+    font-family: 'Inter'; 
+    overflow-x: hidden;
+}
+
+.cor-fundo {
+  background-color: #fdf5dd !important;
+}
+
+/* HEADER */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+.layout-max {
+    max-width: 1440px;
+    margin: 0 auto;  
+    width: 100%;     
+}
+
+.minha-nav {
+    background-color: #4d0d0d;
+}
+
+.ico-button {
+    margin-left: 0;
+    color: white !important;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+
+.minha-ul {
+    display: flex;
+    align-items: center;
+    flex: 1; 
+    justify-content: center; 
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+/* Mobile */
+@media (max-width: 821px) {
+    .minha-ul {
+        gap: 0 !important;
+    }
+}
+
+/* Desktop */
+@media (min-width: 821px) {
+    .minha-ul {
+        gap: 15px !important;
+    }
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.nav-link:hover {
+    color: #ffdd55 !important;
+    font-size: 1.1em;
+    text-decoration: underline;
+}
+/* SECTION 1 */
+
+.sb-hl2{
+    color: #f9f0a9;
+}
+.sb-pl2{
+color: #623232;
+}
+
+.sb-div {
+    margin: 0;
+}
+
+/* SECTION 2 */
+.sb-pl3{
+    color: #714b05;
+}
+
+/* SECTION 3 */
+.sb-bl4{
+    background-color: #165910;
+    color: #f9f0a9;
+    padding: 12px;
+    border-radius: 20px;
+}
+/* FAÇA A SUA RERSERVA */
+.sb-p-qtl{
+    color: #623232;
+}
+.sb-ql-cor{
+    background-color: #a36927;
+}
+.sb-tl5{
+    color: #f9f0a9;
+}
+.sb-btn-l5{
+    text-decoration: none;
+    color: black;
+    background-color: #d9b88a;
+
+}
+.sl{
+    background-color: #d9b88a;
+
+}
+/* FIM DO STYLE DO SOBRE */
+
+/* STYLE CONTATOS */
+
+
+.row-bege {
+    background-color: rgb(217, 184, 138);
+    color: rgb(249, 240, 169);
+}
+
+.row-fundo {
+    background-color: rgb(253, 245, 221);
+}
+
+.row-marrom {
+    background-color: rgb(163, 105, 39);
+}
+
+.card.rounded-5 {
+    overflow: hidden;
+   
+}
+
+.title-lin2{
+    font-size: 50px;
+    font-family: Cinzel Decorative;
+    color: #5C1E18;
+}
+
+.sub-title-lin3{
+    height: 40px;
+    font-family: Cinzel Decorative;
+    color: #5C1E18;
+}
+
+.custom-hr {
+  width: 80%; /* ajuste o valor que quiser */
+}
+
+.font-reserva {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+}
+
+.tam-reserva{
+    width: 800px;
+    background-color: #59201B;
+}
+
+
+.bloco-reserva {
+  background-color: #A56B32; /* cor marrom da imagem */
+  border-radius: 35px;
+}
+
+.font-reserva {
+  font-family: 'Playfair Display', serif;
+  color: #F5E7B5;  /* tom creme do título */
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.sub-texto {
+  font-family: 'Playfair Display', serif;
+  color: #F5E7B5;
+  font-size: 1.1rem;
+}
+
+.btn-reserva {
+  background-color: #E2C593;
+  border: none;
+  border-radius: 20px;
+  padding: 14px 30px;
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  font-size: 1.1rem;
+  box-shadow: 4px 4px 10px rgba(0,0,0,0.2);
+}
+
+.bloco-data{
+    background-color: rgba(243, 188, 110, 0.295);
+  border-radius: 35px;
+  margin-top: 20px;
+
+
+}
+
+.font-data{
+     font-family: 'Playfair Display', serif;
+}
+
+.text-bloco2{
+    font-size: 18px;
+}
+
+.icon{
+      width: 40px; /* ocupa toda largura do elemento pai */
+  height: auto;
+  padding-right: 5px;
+}
+
+
+
+.title-icon{
+    font-size: 22px;
+}
+
+.sub-title-icon{
+    font-size: 18px;
+}
+
+
+
+.Capacidade{
+    padding-left: 30px;
+}
+
+.contato{
+   padding-right: 50px;
+}
+
+.frame-maps {
+    width: 100%;
+    max-width: 750px; /* mantém grande no desktop */
+    height: 350px;
+    margin-bottom: 30px;
+    border: 0;
+}
+
+.title-maps{
+    font-size: 20px;
+}
+
+/* FIM DO STYLE CONTATOS */
+
+
+
+/* __________ FOOTER __________ */
+
+
+.meu-footer {
+    margin: 0 !important;
+    border-top: 1px solid #ffffff60;
+}
+
+.endereco {
+    color: white;
+    text-decoration: none;
+}
+
+.endereco:hover {
+    color: #ffdd55;
+    font-size: 1.1em;
+    text-decoration: underline;
+}
+
+.logo-footer {
+    width: 150px;
+}
+
+.bg-wine {
+    background-color: #4d0d0d; /* cor do rodapé/footer */
+}
+
+.vertical-line {
+    border-left: 1px solid #ffffff60;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.links-footer {
+    text-decoration: none;
+    color: white;
+}
+
+.links-footer:hover {
+    color: #ffdd55;
+    font-size: 1.1em;
+    text-decoration: underline;
+}
+
+.footer-line {
+    border-top: 1px solid #ffffff60;
+    margin-top: 40px;
+}
+
+.ico {
+    width: 45px;
+}
+
+.ico:hover {
+    width: 50px;
+}

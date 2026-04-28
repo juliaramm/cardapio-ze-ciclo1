@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cardápio</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="layout-max">
+        <header>
+            <nav class="navbar navbar-expand-md minha-nav">
+                <div class="container-fluid div-conteudo">
+                    <!-- Botão sanduíche (sempre à esquerda no mobile) -->
+                    <button class="navbar-toggler ico-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon ico-button"></span>
+                    </button>
+                    <!-- Logo MOBILE (aparece só em mobile, à direita do botão) -->
+                    <a class="navbar-brand d-md-none ms-auto" href="#">
+                    <img src="img/logo 2.1.png" alt="" height="50">
+                    </a>
+                    <!-- Collapse: apenas links -->
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav auto minha-ul">
+                        <li class="nav-item"><a class="nav-link" href="home.html?v=1">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cardapio.html?v=1">Cardápio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="eventos.html?v=1">Eventos&Visitas</a></li>
+                    </ul>
+                    <!-- Logo DESKTOP (central, entre os links) -->
+                    <a class="navbar-brand d-none d-md-block mx-3" href="#">
+                        <img src="img/logo 2.1.png" alt="" height="70">
+                    </a>
+                    <ul class="navbar-nav auto minha-ul">
+                        <li class="nav-item"><a class="nav-link" href="sobre.html?v=1">Sobre NOS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Reservas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contatos.html?v=1">Contatos</a></li>
+                    </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="container-fluid rec-chef text-white p-3 p-md-5">
+            <div class="row gx-0 align-items-center">
+                <div class="col-12 col-md-6 texto-chef">
+                <p class="fs-1 fw-bold mb-1">Recomendação do Chef</p>
+                <p class="fs-4 mb-3">Bolinho de Bacalhau</p>
+                <p class="fw-semibold lh-base">Crocante, douradinho e cheio de <br> 
+                    <span class="destaque">sabor!</span><br>
+                    Nosso bolinho de bacalhau é o <br> 
+                    <span class="destaque">petisco perfeito</span><br> 
+                    pra acompanhar uma boa conversa <br> 
+                    e um copo gelado.
+                </p>
+                </div>
+                <div class="col-12 col-md-6 img-chef-wrap">
+                    <img src="img/recomendacao-do-chef-prin.jpeg" alt="Bolinho de Bacalhau" class="img-chef img-fluid rounded-3 shadow" />
+                </div>
+            </div>
+        </div>
+
+        <!-- TITULO PRINCIPAL -->
+        <div class="container-fluid title-principal1">
+            <h1 class="fw-bold text-center title-principal1-1">CARDÁPIO</h1>
+        </div>
+        <!-- TOPO -->
+        <div class="container-fluid py-5 part-cardapio">
+            <!-- SEÇÃO: ENTRADAS -->
+            <h2 class="section-title">ENTRADAS</h2>
+            <div class="row g-4">
+                <!-- ITEM -->
+                <div class="col-md-6 d-flex menu-item">
+                    <img src="img/bolinho-bacalhau-90g.png" class="menu-img">
+                    <div>
+                        <h5 class="fw-bold text-white">Bolinho de Bacalhau <span class="preco">R$16</span></h5>
+                        <p>Tradicional receita portuguesa com bacalhau desfiado, batata e salsa.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex menu-item">
+                    <img src="img/img cardapio 2.jpeg" class="menu-img">
+                    <div>
+                        <h5 class="fw-bold text-white">Gurjão de Peixe <span class="preco">R$75</span></h5>
+                        <p>Tirinhas de peixe empanadas e fritas, crocantes por fora.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex menu-item">
+                    <img src="img/img cardapio 3.jpeg" class="menu-img">
+                    <div>
+                        <h5 class="fw-bold text-white">Camarão à Milanesa <span class="preco">R$80</span></h5>
+                        <p>Camarões empanados e fritos com toque de limão.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex menu-item">
+                    <img src="img/img cardapio 4.jpeg" class="menu-img">
+                    <div>
+                        <h5 class="fw-bold text-white">Aipim Frito <span class="preco">R$75</span></h5>
+                        <p>Aipim frito crocante e sequinho.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- SEÇÃO: ACOMPANHAMENTOS -->
+            <h2 class="section-title mt-5">ACOMPANHAMENTOS</h2>
+            <div class="row g-4">
+                <div class="col-md-6 d-flex menu-item">
+                    <img src="img/img cardapio 5.jpeg" class="menu-img">
+                    <div>
+                        <h5 class="fw-bold text-white">Arroz de Fruto do Mar <span class="preco">R$230</span></h5>
+                        <p>Arroz cremoso com camarões, lula e mexilhão.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex menu-item">
+                    <img src="img/img cardapio 6.jpeg" class="menu-img">
+                    <div>
+                        <h5 class="fw-bold text-white d-flex justify-content-between">Bobó de Camarão <span class="preco">R$85</span></h5>
+                        <p>Clássico brasileiro cremoso.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex menu-item">
+            <img src="img/img cardapio 7.jpg" class="menu-img">
+            <div>
+                <h5 class="fw-bold text-white">Pirão de Camarão <span class="preco">R$75</span></h5>
+                <p>Creme encorpado com caldo de camarões e farinha.</p>
+            </div>
+            </div>
+            <div class="col-md-6 d-flex menu-item">
+                <img src="img/img cardapio 8.jpeg" class="menu-img">
+                <div>
+                    <h5 class="fw-bold text-white">Salada de Palmito <span class="preco">R$50</span></h5>
+                    <p>Salada leve com palmito, ervas e limão.</p>
+                </div>
+            </div>
+            </div>
+            <!-- SEÇÃO: BACALHAU -->
+            <h2 class="section-title mt-5">BACALHAU</h2>
+            <div class="row g-4">
+                <div class="col-md-6 d-flex menu-item">
+                    <img src="img/img cardapio 9.jpeg" class="menu-img">
+                    <div>
+                        <h5 class="fw-bold text-white">Bacalhau à Portuguesa <span class="preco">R$179</span></h5>
+                        <p>Lascas de bacalhau assadas com batatas, cebolas e pimentões.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex menu-item">
+                    <img src="img/img cardapio 10.jpeg" class="menu-img">
+                    <div>
+                        <h5 class="fw-bold text-white">Bacalhau à Lagareiro <span class="preco">R$179</span></h5>
+                        <p>Postas de bacalhau com azeite extra virgem e batatas ao murro.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex menu-item">
+                    <img src="img/img cardapio 11.jpeg" class="menu-img">
+                    <div>
+                        <h5 class="fw-bold text-white">Bacalhau Cremoso <span class="preco">R$220</span></h5>
+                        <p>Bacalhau desfiado com molho cremoso de batatas e temperos.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex menu-item">
+                    <img src="img/img cardapio 12.jpeg" class="menu-img">
+                    <div>
+                        <h5 class="fw-bold text-white">Escondidinho de Bacalhau <span class="preco">R$200</span></h5>
+                        <p>Purê de batatas com bacalhau desfiado gratinado ao forno.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- SEÇÃO: SOBREMESAS -->
+            <h2 class="section-title mt-5">SOBREMESAS</h2>
+            <div class="row g-4">
+                <div class="col-md-6 d-flex menu-item">
+                    <img src="img/pastel-de-nata.png" class="menu-img">
+                    <div>
+                        <h5 class="fw-bold text-white">Pastel de Nata <span class="preco">R$12</span></h5>
+                        <p>Clássico doce português, massa folhada crocante e creme.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex menu-item">
+                    <img src="img/pudim.png" class="menu-img">
+                    <div>
+                        <h5 class="fw-bold text-white">Pudim Cremoso <span class="preco">R$20</span></h5>
+                        <p>Tradicional pudim com textura suave.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex menu-item">
+                <img src="img/quindim.png" class="menu-img">
+                <div>
+                    <h5 class="fw-bold text-white">Quindim <span class="preco">R$18</span></h5>
+                    <p>Doce brasileiro com gema, coco e brilho clássico.</p>
+                </div>
+                </div>
+                <div class="col-md-6 d-flex menu-item">
+                    <img src="img/mousse-maracuja.png" class="menu-img">
+                    <div>
+                        <h5 class="fw-bold text-white">Mousse de Maracujá <span class="preco">R$16</span></h5>
+                        <p>Mousse leve, cremosa e refrescante com calda de maracujá.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- SEÇÃO: BEBIDAS -->
+            <h2 class="section-title mt-5">BEBIDAS</h2>
+            <div class="row g-4">
+                <div class="col-md-6 d-flex menu-item">
+                    <img src="img/suco.jpeg" class="menu-img">
+                    <div>
+                        <h5 class="fw-bold text-white">Suco de Frutas <span class="preco">R$13</span></h5>
+                        <p>Opções naturais e refrescantes.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex menu-item">
+                    <img src="img/cerveja.jpeg" class="menu-img">
+                    <div>
+                        <h5 class="fw-bold text-white">Cervejas <span class="preco">R$19</span></h5>
+                        <p>Diversas marcas tradicionais.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex menu-item">
+                    <img src="img/coca.jpeg" class="menu-img">
+                    <div>
+                        <h5 class="fw-bold text-white">Refrigerantes <span class="preco">R$8</span></h5>
+                        <p>Várias opções disponíveis.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex menu-item">
+                    <img src="img/caipirinha.jpeg" class="menu-img">
+                    <div>
+                        <h5 class="fw-bold text-white">Caipirinha <span class="preco">R$21</span></h5>
+                        <p>Tradicional caipirinha brasileira.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <footer class="bg-wine text-white pt-5 pb-3 mt-5 meu-footer">
+        <div class="container">
+            <div class="row text-center text-md-start">
+                <div class="col-md-4 mb-4">
+                    <img class="logo-footer" src="img/logo 2.1.png" alt="">
+                    <p class="mt-3 mb-1"><strong>Endereço:</strong> <a class="endereco" href="https://www.google.com/maps/place/bacalhau+do+ze/data=!4m2!3m1!1s0x9983cc60b82839:0x9df9aec211e58b91?sa=X&ved=1t:242&ictx=111" target="_blank"> Rua Cinco de Julho 396 Jardim Icaraí - Icaraí, Niterói - RJ, 24220-110</a></p>
+                    <p class="fw-bold mt-4 mb-1">ENTRE EM CONTATO</p>
+                    <p class="fw-bold">(21) 99078-7660</p>
+                </div>
+                <!-- DIVISÓRIA -->
+                <div class="col-md-1 d-none d-md-flex justify-content-center">
+                    <div class="vertical-line"></div>
+                </div>
+                <!-- PÁGINAS -->
+                <div class="col-md-3 mb-4">
+                    <h5 class="fw-bold text-center">PÁGINAS</h5>
+                    <ul class="list-unstyled mt-3 text-center">
+                        <li><a class="links-footer" href="home.html?v=1">HOME</a></li>
+                        <li><a class="links-footer" href="cardapio.html?v=1">CARDÁPIO</a></li>
+                        <li><a class="links-footer" href="eventos.html?v=1">EVENTOS & VISITAS</a></li>
+                        <li><a class="links-footer" href="sobre.html?v=1">SOBRE NÓS</a></li>
+                        <li><a class="links-footer" href="#">RESERVAS</a></li>
+                        <li><a class="links-footer" href="contatos.html?v=1">CONTATO</a></li>
+                    </ul>
+                </div>
+                <!-- DIVISoRIA -->
+                <div class="col-md-1 d-none d-md-flex justify-content-center">
+                    <div class="vertical-line"></div>
+                </div>
+                <!-- REDES SOCIAIS -->
+                <div class="col-md-3 mb-4 text-center text-md-start">
+                    <h5 class="fw-bold">REDES SOCIAIS</h5>
+                    <div class="d-flex gap-3 mt-3 justify-content-center justify-content-md-start">
+                        <a href="https://www.facebook.com/p/Bacalhau-do-Z%C3%A9-100063653284610/?locale=pt_BR" target="_blank"><img class="ico" src="img/ico-facebook.png" alt=""></a>
+                        <a href="https://www.instagram.com/bacalhaudozeniteroi/" target="_blank"><img class="ico" src="img/ico-instagram.png" alt=""></a>
+                        <a href="https://wa.me/5521990787660" target="_blank"><img class="ico" src="img/ico-whatsapp.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <!-- LINHA HORIZONTAL -->
+            <hr class="footer-line">
+            
+            <p class="text-center mt-3 mb-0">
+                © 2025 Zé do Bacalhau | Todos os direitos reservados.
+            </p>
+        </div>
+        
+        </footer>
+    </div>
+
+
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
